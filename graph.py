@@ -60,10 +60,11 @@ def provaClasse():
     grafo = Graph(100)
     # aggiunge il 40% di archi rispetto al numero di vertici.
     grafo.ShuffleEdge(40)
+    #esempio aggiunta arco
+    grafo.addEdge(1,5)
     # stampa le SCC e stampa ritornando il numero di esse.
     numeroSCC = grafo.printSCCs()
     print numeroSCC
-
     # stampa la dfs. Creata lista di White(False)
     lista = []
     for i in range(0, 100):
